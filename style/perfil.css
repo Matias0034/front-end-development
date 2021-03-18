@@ -1,0 +1,98 @@
+
+body{
+    margin:0px;
+}
+.div-nav-head{
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template: 
+        [row1-start] "icon-menu  icon-logo .  icon-search icon-carrito icon-profile" 100% [row1-end]
+        / 1% 33% 60% 1% 1% 1% ;
+    gap: 10px 10px;
+
+}
+
+
+.img-main-header{
+    width: 50%;
+    border-radius: 50%;
+    border-style:ridge;
+    grid-area: item-img;
+    grid-row: row2-start / row2-end;
+}
+
+.div-header{
+    grid-area: item-div;
+    grid-row: row2-start / row2-end;
+    justify-self: flex-start;
+} 
+
+header div .ul-header{
+    list-style: none;
+}
+
+.globalStructure{
+    display: grid;
+    padding:2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: grid;
+    grid-template: 
+        [row1-start] ". ." 40% [row1-end]
+        [row2-start] ". ." 40% [row2-end]
+        [row3-start] "item-img item-div" 40% [row3-end]
+        /20% 20% 20% ;
+    gap: 20px 20px;
+    place-content: start center;
+    place-items: start center;
+   
+}
+
+.section-div-img-product{
+    padding-top: 10%;
+    box-sizing: content-box;
+    place-items: center center;
+    place-content: center center;
+    width: 100%;
+   
+
+}
+.icon-global-head{
+    justify-self:end;
+    align-self: center;
+    color: aqua;
+    width:100%;
+    padding-right: 2em;
+}
+.icon-nav-carrito{
+    grid-area: icon-carrito;
+}
+
+.icon-nav-profile{
+    grid-area: icon-profile;
+}
+
+.icon-nav-search{
+    grid-area: icon-search;
+}
+
+.icon-nav-menu{
+    grid-area: icon-menu;
+    padding-right: 10%;
+    
+}
+
+.icon-nav-logo{
+    grid-area: icon-logo;
+}
+
+.footer{
+    background-color:#042A2D;
+    color: rgb(255, 255, 255,1);
+    width: 100%;
+    padding:100px 0px 100px 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+
+}
